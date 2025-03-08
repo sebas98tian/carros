@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encuentra tu Carro Ideal</title>
+    <link rel="stylesheet" href="index.css?j">
+</head>
+<body>
+
+    <div class="slider-container">
+        <div class="slider">
+
+            <!-- Diapositiva 1 - Enganche Inicial -->
+            <div class="slide active">
+                <div class="slide-box-img"><img src="images/diapo1.svg" alt=""></div>
+                <h2>🚗 ¿Buscas un carro pero no sabes por dónde empezar?</h2>
+                <p>No pierdas tiempo revisando cientos de opciones. Dinos qué buscas y te ayudamos a encontrarlo.</p>
+                <button class="nextSlide">Descubre cómo</button>
+            </div>
+
+            <!-- Diapositiva 2 - Eliminando Objeciones -->
+            <div class="slide">
+                <div class="slide-box-img"><img src="images/diapo2.svg" alt=""></div>
+                <h2>😕 Comprar carro puede ser abrumador...</h2>
+                <p>Hay demasiadas opciones, precios confusos y vendedores que solo quieren cerrar una venta.</p>
+                <p>Nosotros te conectamos con opciones que realmente se ajustan a lo que quieres.</p>
+                <button class="nextSlide" class="a">Evita perder tiempo</button>
+            </div>
+
+            <!-- Diapositiva 3 - Beneficio Principal -->
+            <div class="slide">
+                <div class="slide-box-img"><img src="images/diapo3.svg" alt=""></div>
+                <h2>🏆 Encuentra el carro perfecto en minutos</h2>
+                <p>Cuéntanos tu presupuesto y preferencias.</p>
+                <p>Nosotros te enviamos las mejores opciones disponibles. Sin compromiso, sin complicaciones.</p>
+                <button class="nextSlide" class="a">Ver mis opciones</button>
+            </div>
+
+            <!-- Diapositiva 4 - Llamado a la Acción (Formulario) -->
+            <form id="carForm">
+                <h2>📋 Dinos qué buscas y te ayudamos</h2>
+                <p>Llena este breve formulario y recibe opciones personalizadas sin costo.</p>
+            
+                <label for="presupuesto">💰 Presupuesto (obligatorio)</label>
+                <input type="number" id="presupuesto" name="presupuesto" placeholder="Ej. 50,000" required>
+            
+                <label for="ciudad">📍 Ciudad (obligatorio)</label>
+                <input type="text" id="ciudad" name="ciudad" placeholder="Ej. Bogotá" required>
+            
+                <label for="whatsapp">📲 Número de WhatsApp (obligatorio)</label>
+                <input type="tel" id="whatsapp" name="whatsapp" placeholder="Ej. +57 300 1234567" required>
+            
+                <label for="marca">🚗 Marca (opcional)</label>
+                <input type="text" id="marca" name="marca" placeholder="Ej. Toyota">
+            
+                <label for="modelo">📅 Modelo (opcional)</label>
+                <input type="text" id="modelo" name="modelo" placeholder="Ej. Corolla">
+            
+                <label for="cilindraje">🔧 Cilindraje (opcional)</label>
+                <input type="text" id="cilindraje" name="cilindraje" placeholder="Ej. 1.6L">
+            
+                <label for="kilometraje">📏 Kilometraje (opcional)</label>
+                <input type="number" id="kilometraje" name="kilometraje" placeholder="Ej. 80,000 km">
+            
+                <label for="transmision">⚙️ Transmisión (opcional)</label>
+                <select id="transmision" name="transmision">
+                    <option value="">Selecciona...</option>
+                    <option value="manual">Manual</option>
+                    <option value="automatica">Automática</option>
+                </select>
+            
+                <label for="datos_adicionales">📝 Datos adicionales (opcional)</label>
+                <textarea id="datos_adicionales" name="datos_adicionales" placeholder="Escribe cualquier otro detalle..."></textarea>
+            
+                <button type="submit">Enviar</button>
+            </form>
+            
+
+        </div>
+    </div>
+    <script src="index.js"></script>
+
+</body>
+</html>

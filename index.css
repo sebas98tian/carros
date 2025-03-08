@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body {
+    height: 100vh;
+    overflow-y: hidden;
+}
+.slider{
+    display: flex;
+}
+.slide{
+    flex-shrink: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #1E293B;
+    display: grid;
+    grid-template-rows: 60% 1fr 1fr 1fr;
+    text-align: center;
+    color: white;
+    padding-bottom: 15px;
+}
+.slide-box-img{
+    width: 100%;
+    height: 100%; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.slide img{
+    width: 80%;
+    height: 80%;
+}
+button{
+    width: 300px;
+    padding: 15px;
+    background-color: #10B981;
+    margin: auto;
+    border: none;
+    border-radius: 13px;
+    color: white;
+}
+.a{
+    margin-bottom: 15px;
+}
+/* ................................................................. */
+
+form {
+    width: 90%;
+    max-width: 500px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+}
+
+form h2 {
+    text-align: center;
+    margin-bottom: 15px;
+    color: hsl(0, 0%, 20%);
+    width: 100vw
+}
+
+ form p {
+    text-align: center;
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+label {
+    font-weight: bold;
+    display: block;
+    margin: 10px 0 5px;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 80px;
+}
+
+form button {
+    width: 100%;
+    background: #ff5733;
+    color: #fff;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background: #e04a2b;
+}
+
+
