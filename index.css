@@ -1,67 +1,103 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
 }
 
 html, body {
     height: 100dvh;
     overflow: hidden;
-    display: flex;
-    justify-content: center; /* Centrar el formulario */
-    align-items: center; /* Centrar verticalmente */
-    background-color: #f4f4f4;
 }
 
+.slider {
+    display: flex;
+}
+
+.slide {
+    flex-shrink: 0;
+    width: 100vw;
+    height: 100dvh;
+    background-color: #1E293B;
+    display: grid;
+    grid-template-rows: 60% 1fr 1fr 1fr;
+    text-align: center;
+    color: white;
+    padding-bottom: 15px;
+}
+
+.slide-box-img {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slide img {
+    width: 80%;
+    height: auto; /* Evita que la imagen cause desbordamiento */
+    max-height: 100%;
+}
+
+button {
+    width: 300px;
+    padding: 15px;
+    background-color: #10B981;
+    margin: auto;
+    border: none;
+    border-radius: 13px;
+    color: white;
+}
+
+.a {
+    margin-bottom: 15px;
+}
+
+/* ................................................................. */
+
 form {
-    width: 100%; /* Ocupar el ancho completo del contenedor */
-    max-width: 500px; /* Limite para que no sea demasiado grande */
-    background: #fff;
+    width: 100vw;  /* Ahora ocupa toda la pantalla */
     padding: 25px;
+    background: #fff;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin: auto;
     display: flex;
-    flex-direction: column; /* Asegura que los elementos están en columna */
+    flex-direction: column;
+    flex-shrink: 0;
 }
 
 form h2 {
-    font-size: 22px;
-    color: hsl(0, 0%, 20%);
     text-align: center;
     margin-bottom: 15px;
+    color: hsl(0, 0%, 20%);
 }
 
 form p {
-    font-size: 16px;
-    color: #666;
     text-align: center;
+    font-size: 14px;
+    color: #666;
     margin-bottom: 20px;
 }
 
 label {
-    font-size: 16px;
-    font-weight: 600;
+    font-weight: bold;
     display: block;
-    margin-bottom: 5px;
-    padding-left: 5px;
+    margin: 10px 0 5px;
 }
 
 input, select, textarea {
     width: 100%;
-    padding: 12px;
+    padding: 10px;
+    margin-bottom: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
-    font-size: 16px;
-    margin-bottom: 20px;
+    font-size: 14px;
 }
 
 textarea {
     resize: vertical;
-    min-height: 100px;
+    min-height: 80px;
 }
 
 form button {
@@ -76,6 +112,6 @@ form button {
     transition: background 0.3s ease;
 }
 
-form button:hover {
+button:hover {
     background: #e04a2b;
 }
